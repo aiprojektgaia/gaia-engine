@@ -1,0 +1,9 @@
+requests==2.33.0
+rasterio==1.4.3
+# GDAL must match the native libgdal of the runtime image (see the base image
+# in gaia-backend/Dockerfile). The PyPI package is sdist-only, so a pin that
+# does not match forces a source build that fails - and the backend then flags
+# this interface "not installed" at startup with the pip error swallowed.
+# Bump this pin and the Dockerfile base image together, never separately.
+GDAL==3.13.2
+numpy>=2.1

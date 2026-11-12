@@ -1,0 +1,70 @@
+{
+    "raster_files": {
+        "orthophoto": "/path/to/test_area/ortho_photo.tif",
+        "segmentation_layers": {
+            "buildings": "/path/to/test_area/layer_buildings.tif",
+            "roads": "/path/to/test_area/layer_roads.tif",
+            "vegetation": "/path/to/test_area/layer_veg.tif",
+            "hard_surfaces": "/path/to/test_area/layer_hard_surf.tif"
+        }
+    },
+    "output_dir": "/path/to/test_area/output",
+    "output_file": "final_vectorized.gpkg",
+    "write_intermediate": true,
+    "layer_properties": {
+        "buildings": {
+            "min_area": 10,
+            "smallest_hole": 4,
+            "shortest_edge": 0.5,
+            "gap_closure": 0.5,
+            "sigma": 0,
+            "vectorizer": "building",
+            "smoothing": "none",
+            "simplify": "vwp",
+            "simplify_tolerance": 0
+        },
+        "roads": {
+            "min_area": 5,
+            "smallest_hole": 5,
+            "shortest_edge": 1,
+            "gap_closure": 4,
+            "sigma": 0.05,
+            "smoothing": "none",
+            "smoothing_parameter": 2,
+            "simplify": "vwp",
+            "simplify_tolerance": 1
+        },
+        "vegetation": {
+            "min_area": 20,
+            "smallest_hole": 5,
+            "shortest_edge": 0.5,
+            "sigma": 1,
+            "smoothing": "chaikin",
+            "subdivide": 0,
+            "smoothing_parameter": 1,
+            "simplify": "vwp",
+            "simplify_tolerance": 0.1
+        },
+        "hard_surfaces": {
+            "min_area": 20,
+            "smallest_hole": 5,
+            "shortest_edge": 0.5,
+            "sigma": 1,
+            "smoothing": "chaikin",
+            "subdivide": 0,
+            "smoothing_parameter": 1,
+            "simplify": "vwp",
+            "simplify_tolerance": 0.1
+        }
+    },
+    "vector_layer_order": {
+        "base_layers": [
+            "vegetation",
+            "hard_surfaces"
+        ],
+        "overlays": [
+            "roads",
+            "buildings"
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+rasterio==1.4.3
+requests==2.33.0
+segmentation-models-pytorch==0.4.0
+pytorch-lightning==2.6.5
+# Direct import in inferencer.py, main.py and resunet_inferencer.py. Previously
+# arrived transitively via ultralytics; pinned explicitly since that was removed.
+opencv-python==4.11.0.86

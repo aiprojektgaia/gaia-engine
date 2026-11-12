@@ -1,0 +1,11 @@
+requests==2.33.0
+rasterio==1.4.3
+scipy==1.15.1
+shapely==2.0.6
+fiona==1.10.1
+opencv-python==4.11.0.86
+numpy>=2.1
+scikit-image>=0.25.1
+tqdm>=4.67.1
+largestinteriorrectangle>=0.2.1
+simplification>=0.7.13

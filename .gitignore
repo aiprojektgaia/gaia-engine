@@ -1,0 +1,51 @@
+# Prevent tracking on example data #
+####################################
+
+# raster data
+*.tif
+*.tfw
+*.aux.xml
+# pointcloud data
+*.prj
+*.las
+# vector data
+*.gpkg
+*.gdb
+*.shp
+*.dbf
+*.shx
+
+# python files to ignore    
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook
+*.ipynb_checkpoints
+
+*.code-workspace
+
+uv.lock
+
+
+#IDE
+.vscode/
+.idea/
+.DS_Store
+
+# bitter - result-files
+*.vrt
+
+venv/
+.venv/
+# Model checkpoints are downloaded separately (see docs/MODELS.md), never committed
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Per-module virtual environments built by the backend
+venv/
+.venv/
+__pycache__/
+

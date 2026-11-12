@@ -1,0 +1,17 @@
+[
+    {
+        "name": "image_bitter",
+        "group": "Internal",
+        "description": "Will take the segmentation result, apply a confidence level and return a bit map (>1s and 0s)",
+        "args": {
+            "image_path": "",
+            "output_path": "",
+            "callback_url": "",
+            "confidence_level": 73,
+            "max_confidence_value": 255,
+            "action": "merge-bits-with-confidence"
+        },
+        "function_name": "double-shot",
+        "module_file_name": "engine_runner.py"
+    }
+]

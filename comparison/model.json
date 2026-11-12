@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Comparison",
+        "group": "Comparison",
+        "description": "This does the comparison",
+        "args": {
+            "classname": "buildings",
+            "image_path": "",
+            "basemap_path": "",
+            "output_path": "",
+            "callback_url": ""
+        },
+        "function_name": "runComparer",
+        "module_file_name": "engine_runner.py"
+    }
+]

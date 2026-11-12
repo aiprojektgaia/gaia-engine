@@ -1,0 +1,32 @@
+{
+    "models": {
+        "buildings": {
+            "tile comparer": "building tile comparer",
+            "segment comparer": "comparer_v1"
+        },
+        "roads": {
+            "tile comparer": "road tile comparer",
+            "segment comparer": null
+        }
+    },
+    "tile comparer": {
+        "building tile comparer": {
+            "parameters": {},
+            "image_threshold": 128
+        },
+        "road tile comparer": {
+            "parameters": {
+                "dist": 8,
+                "min_length": 30
+            }
+        }
+    },
+    "segment comparer": {
+        "comparer_v1": {
+            "parameters": {
+                "threshold": 0.1,
+                "ratio": 0.90
+            }
+        }
+    }
+}

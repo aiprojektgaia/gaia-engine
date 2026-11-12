@@ -1,0 +1,25 @@
+{
+    "data folder": "data",
+    "result folder": {
+        "buildings": "results/buildings",
+        "roads": "results/roads"
+    },
+    "models": {
+        "roads": {
+            "model type": "resunet",
+            "model name": "./models/roads_50e.ckpt",
+            "parameters": {
+                "resolution": 0.05,
+                "sha256": "74186af978bd7bf75042f30011aec4e1cae514ceb60cc81c095da08d0a2f2ad5"
+            }
+        },
+        "buildings": {
+            "model type": "resunet",
+            "model name": "./models/buildings_50e.ckpt",
+            "parameters": {
+                "resolution": 0.05,
+                "sha256": "dedae152836ce06ba6a4dd9a70cfd45f18e97e00810f17bdf0326b80885de8d5"
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+[
+    {
+        "name": "vector_buildings",
+        "group": "Vectorization",
+        "description": "This creates a geopackage file from a classification output",
+        "args": {
+            "image_path": "",
+            "output_path": "",
+            "callback_url": "",
+            "classname": "buildings"
+        },
+        "function_name": "buildings",
+        "module_file_name": "engine_runner.py"
+    },
+    {
+        "name": "vector_routes",
+        "group": "Vectorization",
+        "description": "This creates a geopackage file from a classification output",
+        "args": {
+            "image_path": "",
+            "output_path": "",
+            "callback_url": "",
+            "classname": "roads"
+        },
+        "function_name": "roads",
+        "module_file_name": "engine_runner.py"
+    }
+]

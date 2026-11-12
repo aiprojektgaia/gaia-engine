@@ -1,0 +1,3 @@
+opencv-contrib-python==4.11.0.86
+geopandas==1.1.2
+rasterio==1.4.3

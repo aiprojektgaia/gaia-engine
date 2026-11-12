@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Segmentation - Roads",
+        "group": "Classification",
+        "description": "This does the segmentation",
+        "args": {
+            "classname": "roads",
+            "image_path": "",
+            "output_path": "",
+            "callback_url": ""
+        },
+        "function_name": "runInference",
+        "module_file_name": "engine_runner.py"
+    },
+    {
+        "name": "Segmentation - Buildings (ResUNet)",
+        "group": "Classification",
+        "description": "Building segmentation using ResUNet architecture",
+        "args": {
+            "classname": "buildings",
+            "image_path": "",
+            "output_path": "",
+            "callback_url": ""
+        },
+        "function_name": "runInference",
+        "module_file_name": "engine_runner.py"
+    }
+]

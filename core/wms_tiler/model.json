@@ -1,0 +1,21 @@
+[
+    {
+        "name": "wms_tiler",
+        "group": "Internal",
+        "description": "This calls a WMS and tiles from a given layer",
+        "args": {
+            "wms_server_url": "",
+            "layer_name": "",
+            "tile_size_pixels": 1024,
+            "overlap": 10,
+            "mpp": 0.08,
+            "bbox": "",
+            "epsg": "",
+            "image_format": "geotiff",
+            "output_path": "",
+            "callback_url": ""
+        },
+        "function_name": "do_tiling",
+        "module_file_name": "main.py"
+    }
+]
